@@ -44,7 +44,7 @@ dict = {
 # http://www.shijou-nippo.metro.tokyo.jp/SN/200401/20040105/Kak/Kak_k0.csv
 
 download_urls = []
-for year in range(2004, 2017):
+for year in range(2008, 2017):
     for month in range(1, 13):
         yearMonth = ''
         yearMonth += 'SN/' + str(year)
@@ -63,10 +63,10 @@ for year in range(2004, 2017):
 
 # ファイルのダウンロード（ひとまず3件に制限）
 # 回す時は制限を取って回す
-for download_url in download_urls[:5]:
+for download_url in download_urls:
 
     # 一秒スリープ
-    time.sleep(1)
+    # time.sleep(1)
 
     file_name = download_url.split("/")[-1]
 
